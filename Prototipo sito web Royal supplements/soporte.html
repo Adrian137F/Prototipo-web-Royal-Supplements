@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte | Royal Supplements</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="soporte.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Logo de la tienda">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="soporte.html" class="activo">Soporte</a></li>
+            </ul>
+        </nav>
+        <div class="buscador">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar productos...">
+                <button type="submit" id="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <div class="user-actions">
+            <a href="cuenta.html" class="cuenta-btn">
+                <i class="fas fa-user"></i>
+                <span>Mi Cuenta</span>
+            </a>
+            <a href="carrito.html" class="carrito-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Carrito</span>
+                <span class="carrito-contador">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="soporte-main">
+        <div class="soporte-contenedor">
+            <h1 class="soporte-titulo">Centro de Soporte</h1>
+            <p class="soporte-descripcion">Estamos aquí para ayudarte. Encuentra respuestas rápidas a tus preguntas o comunícate directamente con nuestro equipo de servicio al cliente.</p>
+            
+            <div class="soporte-tabs">
+                <button class="tab-btn activo" data-tab="faq">Preguntas Frecuentes</button>
+                <button class="tab-btn" data-tab="contacto">Formulario de Contacto</button>
+                <button class="tab-btn" data-tab="chat">Chat en Vivo</button>
+            </div>
+            
+            <!-- Sección de Preguntas Frecuentes -->
+            <section id="faq" class="tab-content activo">
+                <h2>Preguntas Frecuentes</h2>
+                
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>¿Cuáles son los métodos de pago aceptados?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Aceptamos múltiples métodos de pago para tu comodidad:</p>
+                            <ul>
+                                <li>Tarjetas de crédito/débito (Visa, MasterCard, American Express)</li>
+                                <li>PayPal</li>
+                                <li>Transferencia bancaria</li>
+                                <li>Pago en efectivo en tiendas físicas</li>
+                                <li>MercadoPago</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>¿Cuánto tiempo tarda en llegar mi pedido?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Los tiempos de entrega varían según tu ubicación:</p>
+                            <ul>
+                                <li>Guadalajara y área metropolitana: 1-2 días hábiles</li>
+                                <li>Principales ciudades de México: 2-3 días hábiles</li>
+                                <li>Resto del país: 3-5 días hábiles</li>
+                            </ul>
+                            <p>Todos los pedidos son enviados con número de rastreo para que puedas seguir tu paquete.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>¿Cómo puedo rastrear mi pedido?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Una vez que tu pedido haya sido enviado, recibirás un correo electrónico con el número de rastreo y el enlace para seguir tu paquete. También puedes ingresar a tu cuenta en nuestra página web y revisar el estado de tu pedido en la sección "Mis Pedidos".</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>¿Cuál es la política de devoluciones?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Aceptamos devoluciones dentro de los 30 días posteriores a la compra, siempre y cuando:</p>
+                            <ul>
+                                <li>El producto esté sin abrir y en su empaque original</li>
+                                <li>Se presente el comprobante de compra</li>
+                                <li>El producto no esté dañado o manipulado</li>
+                            </ul>
+                            <p>Para iniciar una devolución, completa el formulario en la sección "Devoluciones" de tu cuenta o comunícate con nuestro equipo de atención al cliente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>¿Los productos tienen garantía?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Todos nuestros productos cuentan con garantía de autenticidad. Si recibes un producto en mal estado o con defectos de fábrica, por favor contáctanos dentro de los primeros 7 días después de recibir tu pedido para hacer válida la garantía.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>¿Cómo sé qué suplemento es el adecuado para mí?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>La elección de suplementos depende de varios factores como tus objetivos, tu tipo de entrenamiento y tu dieta actual. Te recomendamos:</p>
+                            <ul>
+                                <li>Consultar con un nutriólogo o profesional de la salud</li>
+                                <li>Revisar nuestro blog con guías detalladas sobre suplementación</li>
+                                <li>Contactar a nuestros asesores mediante el chat o formulario de contacto para recibir orientación personalizada</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>¿Ofrecen envíos internacionales?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Actualmente, solo realizamos envíos dentro de la República Mexicana. Estamos trabajando para expandir nuestros servicios a nivel internacional en el futuro.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Formulario de Contacto -->
+            <section id="contacto" class="tab-content">
+                <h2>Formulario de Contacto</h2>
+                <p>Complete el siguiente formulario y nuestro equipo de soporte se pondrá en contacto contigo lo antes posible.</p>
+                
+                <form class="formulario-contacto">
+                    <div class="form-grupo">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-grupo">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-grupo">
+                        <label for="telefono">Teléfono (opcional)</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    
+                    <div class="form-grupo">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="pedido">Consulta sobre mi pedido</option>
+                            <option value="producto">Información de producto</option>
+                            <option value="devolucion">Devoluciones o cambios</option>
+                            <option value="facturacion">Facturación</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-grupo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                    </div>
+                    
+                    <div class="form-grupo checkbox-grupo">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">He leído y acepto la <a href="#">política de privacidad</a></label>
+                    </div>
+                    
+                    <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                </form>
+                
+                <div class="info-contacto">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visítanos</h4>
+                            <p>Av. Patria #477, Col. 5 de mayo, Guadalajara, Jalisco.</p>
+                            <p>Av. Cruz del Sur #3275-B, Col. la Cruz, Guadalajara, Jalisco.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Llámanos</h4>
+                            <p>(55) 3329842406</p>
+                            <p>(55) 3329644547</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Escríbenos</h4>
+                            <p>soporte@royalsupplements.com</p>
+                            <p>ventas@royalsupplements.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Chat en Vivo -->
+            <section id="chat" class="tab-content">
+                <h2>Chat en Vivo</h2>
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <div class="chat-avatar">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="chat-info">
+                            <h3>Soporte Royal Supplements</h3>
+                            <p class="chat-status online">En línea</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-mensajes">
+                        <div class="mensaje-recibido">
+                            <p>¡Hola! Bienvenido al soporte de Royal Supplements. ¿En qué podemos ayudarte hoy?</p>
+                            <span class="mensaje-hora">10:30</span>
+                        </div>
+                        
+                        <div class="mensaje-enviado">
+                            <p>Hola, tengo una pregunta sobre mi último pedido.</p>
+                            <span class="mensaje-hora">10:31</span>
+                        </div>
+                        
+                        <div class="mensaje-recibido">
+                            <p>Claro, estaré encantado de ayudarte. ¿Podrías proporcionarme el número de tu pedido o el correo electrónico asociado a tu cuenta?</p>
+                            <span class="mensaje-hora">10:32</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input">
+                        <input type="text" placeholder="Escribe tu mensaje aquí...">
+                        <button type="button" class="btn-enviar-chat">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="chat-info-box">
+                    <h3>Horario de atención</h3>
+                    <p>Nuestro equipo de soporte está disponible:</p>
+                    <ul>
+                        <li><strong>Lunes a Viernes:</strong> 10:00 - 20:00 hrs</li>
+                        <li><strong>Sábados:</strong> 10:00 - 18:00 hrs</li>
+                        <li><strong>Domingos:</strong> Cerrado</li>
+                    </ul>
+                    <p>Si nos contactas fuera de horario, responderemos tu mensaje lo antes posible el siguiente día hábil.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-contacto">
+                <h3>Contáctanos</h3>
+                <p><i class="fas fa-map-marker-alt"></i>Av. Patria #477, Col. 5 de mayo, Guadalajara, Jalisco.</p>
+                <p><i class="fas fa-phone"></i>(55) 3329842406</p>
+                <p><i class="fas fa-map-marker-alt"></i>Av. Cruz del Sur #3275-B, Col. la Cruz, Guadalajara, Jalisco.</p>
+                <p><i class="fas fa-phone"></i>(55) 3329644547</p>
+            </div>
+            <div class="footer-redes">
+                <h3>Síguenos</h3>
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/theroyalsupplements" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/the_royal_supplements/#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-derechos">
+            <p>&copy; 2025 Royal Supplements. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script simple para contador de carrito
+        const botonesAgregar = document.querySelectorAll('.btn-agregar');
+        const contadorCarrito = document.querySelector('.carrito-contador');
+        
+        let contador = 0;
+        
+        if (botonesAgregar) {
+            botonesAgregar.forEach(boton => {
+                boton.addEventListener('click', () => {
+                    contador++;
+                    contadorCarrito.textContent = contador;
+                    boton.innerHTML = "¡Agregado!";
+                    setTimeout(() => {
+                        boton.innerHTML = "Agregar al carrito";
+                    }, 1000);
+                });
+            });
+        }
+        
+        // Script para las pestañas de soporte
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Quitar clase activo de todos los botones
+                tabBtns.forEach(b => b.classList.remove('activo'));
+                // Añadir clase activo al botón clickeado
+                btn.classList.add('activo');
+                
+                // Mostrar el contenido correspondiente
+                const tabId = btn.getAttribute('data-tab');
+                tabContents.forEach(content => {
+                    content.classList.remove('activo');
+                    if (content.id === tabId) {
+                        content.classList.add('activo');
+                    }
+                });
+            });
+        });
+        
+        // Script para el acordeón de FAQ
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const accordionItem = header.parentElement;
+                accordionItem.classList.toggle('abierto');
+            });
+        });
+    </script>
+</body>
+</html>

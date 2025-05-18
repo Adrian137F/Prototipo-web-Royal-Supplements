@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Producto - Suplementos Deportivos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="producto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Logo de la tienda">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+        <div class="buscador">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar productos...">
+                <button type="submit" id="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <div class="user-actions">
+            <a href="cuenta.html" class="cuenta-btn">
+                <i class="fas fa-user"></i>
+                <span>Mi Cuenta</span>
+            </a>
+            <a href="carrito.html" class="carrito-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Carrito</span>
+                <span class="carrito-contador">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="producto-detalle-contenedor">
+        <div class="producto-detalle">
+            <div class="producto-imagen-grande">
+                <img src="img/prote1.jpeg" alt="Proteína Iso Phorm" id="imagen-principal">
+                <div class="galeria-miniaturas">
+                    <img src="img/prote1.jpeg" alt="Proteína Iso Phorm" class="miniatura activa" onclick="cambiarImagen(this)">
+                </div>
+            </div>
+
+            <div class="producto-info-detalle">
+                <h1>Proteína Iso Phorm</h1>
+                <p class="producto-marca">Marca: Muscle Pharm</p>
+                <div class="producto-precio-detalle">$1799.00</div>
+                <p class="producto-disponibilidad"><i class="fas fa-check-circle"></i> En stock</p>
+                
+                <div class="producto-descripcion">
+                    <h2>Descripción</h2>
+                    <p>Iso Phorm es una proteína de suero aislada de alta calidad con 25g de proteína por porción y solo 1g de azúcar. Ideal para el desarrollo muscular y la recuperación post-entrenamiento.</p>
+                    <ul>
+                        <li>25g de proteína por porción</li>
+                        <li>Solo 1g de azúcar</li>
+                        <li>Libre de gluten</li>
+                        <li>Sin aminoácidos agregados</li>
+                        <li>Certificación de calidad</li>
+                    </ul>
+                </div>
+                
+                <div class="producto-acciones">
+                    <div class="selector-cantidad">
+                        <button class="btn-cantidad" onclick="disminuirCantidad()">-</button>
+                        <input type="text" id="cantidad" value="1" readonly>
+                        <button class="btn-cantidad" onclick="aumentarCantidad()">+</button>
+                    </div>
+                    <button class="btn-agregar-detalle">Agregar al carrito</button>
+                </div>
+            </div>
+        
+
+        <div class="valoraciones-section">
+            <h2>Valoraciones de clientes</h2>
+            <div class="valoracion-general">
+                <div class="valor-promedio">4.5</div>
+                <div class="estrellas-promedio">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(24 valoraciones)</span>
+                </div>
+            </div>
+
+            <div class="lista-valoraciones">
+                <!-- Valoración 1 -->
+                <div class="valoracion-item">
+                    <div class="valoracion-cabecera">
+                        <div class="valoracion-usuario">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Carlos M.</span>
+                        </div>
+                        <div class="valoracion-estrellas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="valoracion-fecha">12/05/2025</p>
+                    <p class="valoracion-comentario">Excelente proteína, se disuelve muy bien y el sabor es increíble. Ya veo resultados después de 3 semanas.</p>
+                </div>
+
+                <!-- Valoración 2 -->
+                <div class="valoracion-item">
+                    <div class="valoracion-cabecera">
+                        <div class="valoracion-usuario">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Ana L.</span>
+                        </div>
+                        <div class="valoracion-estrellas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="valoracion-fecha">28/04/2025</p>
+                    <p class="valoracion-comentario">Buena calidad y sabor, pero el envase vino un poco dañado. El producto en sí es muy bueno.</p>
+                </div>
+            </div>
+
+            <div class="escribir-valoracion">
+                <h3>Escribe tu valoración</h3>
+                <div class="selector-estrellas">
+                    <p>Tu puntuación:</p>
+                    <div class="estrellas-seleccion">
+                        <i class="far fa-star" onclick="seleccionarEstrella(1)"></i>
+                        <i class="far fa-star" onclick="seleccionarEstrella(2)"></i>
+                        <i class="far fa-star" onclick="seleccionarEstrella(3)"></i>
+                        <i class="far fa-star" onclick="seleccionarEstrella(4)"></i>
+                        <i class="far fa-star" onclick="seleccionarEstrella(5)"></i>
+                    </div>
+                </div>
+                <form id="form-valoracion">
+                    <textarea placeholder="Comparte tu experiencia con este producto"></textarea>
+                    <button type="submit" class="btn-valorar">Enviar valoración</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</div>
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-contacto">
+                <h3>Contáctanos</h3>
+                <p><i class="fas fa-map-marker-alt"></i>Av. Patria #477, Col. 5 de mayo, Guadalajara, Jalisco.</p>
+                <p><i class="fas fa-phone"></i>(55) 3329842406</p>
+                <p><i class="fas fa-map-marker-alt"></i>Av. Cruz del Sur #3275-B, Col. la Cruz, Guadalajara, Jalisco.</p>
+                <p><i class="fas fa-phone"></i>(55) 3329644547</p>
+            </div>
+            <div class="footer-redes">
+                <h3>Síguenos</h3>
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/theroyalsupplements" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/the_royal_supplements/#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-derechos">
+            <p>&copy; 2025 Royal Supplements. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Funciones básicas para la página de producto
+        function cambiarImagen(elemento) {
+            // Cambiar la imagen principal
+            document.getElementById('imagen-principal').src = elemento.src;
+            
+            // Actualizar clase activa en miniaturas
+            document.querySelectorAll('.miniatura').forEach(miniatura => {
+                miniatura.classList.remove('activa');
+            });
+            elemento.classList.add('activa');
+        }
+        
+        function aumentarCantidad() {
+            let input = document.getElementById('cantidad');
+            let valor = parseInt(input.value);
+            input.value = valor + 1;
+        }
+        
+        function disminuirCantidad() {
+            let input = document.getElementById('cantidad');
+            let valor = parseInt(input.value);
+            if (valor > 1) {
+                input.value = valor - 1;
+            }
+        }
+        
+        function seleccionarEstrella(num) {
+            let estrellas = document.querySelectorAll('.estrellas-seleccion i');
+            
+            // Resetear todas las estrellas
+            estrellas.forEach((estrella, index) => {
+                if (index < num) {
+                    estrella.className = 'fas fa-star';
+                } else {
+                    estrella.className = 'far fa-star';
+                }
+            });
+        }
+    </script>
+</body>
