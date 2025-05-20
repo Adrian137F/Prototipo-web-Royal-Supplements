@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento de Pedido - Royal Supplements</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="seguimiento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Logo de la tienda">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+        <div class="buscador">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar productos...">
+                <button type="submit" id="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <div class="user-actions">
+            <a href="cuenta.html" class="cuenta-btn">
+                <i class="fas fa-user"></i>
+                <span>Mi Cuenta</span>
+            </a>
+            <a href="carrito.html" class="carrito-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Carrito</span>
+                <span class="carrito-contador">3</span>
+            </a>
+        </div>
+    </header>
+
+    <h1 class="seguimiento-titulo">Seguimiento de Pedido</h1>
+    <main class="seguimiento-contenedor">
+        <div class="seguimiento-contenido">
+            <div class="seguimiento-form">
+                <h2>Ingresa los datos de tu pedido</h2>
+                <form id="tracking-form">
+                    <div class="form-grupo">
+                        <label for="orden-id">Número de Orden:</label>
+                        <input type="text" id="orden-id" placeholder="Ej: RS-123456">
+                    </div>
+                    <div class="form-grupo">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="correo@ejemplo.com">
+                    </div>
+                    <button type="submit" class="btn-consultar">Consultar estado</button>
+                </form>
+            </div>
+            
+            <div class="seguimiento-info">
+                <div class="pedido-info">
+                    <h2>Información del Pedido</h2>
+                    <div class="info-grupo">
+                        <span class="info-label">Número de orden:</span>
+                        <span class="info-valor">RS-567890</span>
+                    </div>
+                    <div class="info-grupo">
+                        <span class="info-label">Fecha de compra:</span>
+                        <span class="info-valor">14 de Mayo, 2025</span>
+                    </div>
+                    <div class="info-grupo">
+                        <span class="info-label">Total:</span>
+                        <span class="info-valor">$3,347.00</span>
+                    </div>
+                    <div class="info-grupo">
+                        <span class="info-label">Estado actual:</span>
+                        <span class="info-valor estado-enviado">Enviado</span>
+                    </div>
+                    <div class="info-grupo">
+                        <span class="info-label">Número de guía:</span>
+                        <span class="info-valor">EST12345678MX</span>
+                    </div>
+                </div>
+                
+                <div class="seguimiento-progreso">
+                    <h2>Estado del Envío</h2>
+                    <div class="progreso-pasos">
+                        <div class="paso completado">
+                            <div class="paso-icono">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="paso-info">
+                                <h3>Pedido confirmado</h3>
+                                <p>14 Mayo, 10:30</p>
+                            </div>
+                        </div>
+                        <div class="paso completado">
+                            <div class="paso-icono">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="paso-info">
+                                <h3>Pedido procesado</h3>
+                                <p>15 Mayo, 09:15</p>
+                            </div>
+                        </div>
+                        <div class="paso completado">
+                            <div class="paso-icono">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <div class="paso-info">
+                                <h3>En tránsito</h3>
+                                <p>16 Mayo, 13:45</p>
+                            </div>
+                        </div>
+                        <div class="paso actual">
+                            <div class="paso-icono">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="paso-info">
+                                <h3>En reparto</h3>
+                                <p>17 Mayo, 08:30</p>
+                            </div>
+                        </div>
+                        <div class="paso">
+                            <div class="paso-icono">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="paso-info">
+                                <h3>Entregado</h3>
+                                <p>Pendiente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="detalles-pedido">
+                    <h2>Detalle de Productos</h2>
+                    <div class="productos-lista">
+                        <div class="producto-detalle">
+                            <img src="img/prote1.jpeg" alt="Proteína Iso Phorm">
+                            <div class="producto-detalle-info">
+                                <h3>Proteína Iso Phorm</h3>
+                                <p class="producto-marca">Marca: Muscle Pharm</p>
+                                <div class="producto-detalles-precio">
+                                    <span>$1,799.00</span>
+                                    <span>Cantidad: 1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="producto-detalle">
+                            <img src="img/creatina.jpeg" alt="Creatina Monohidratada">
+                            <div class="producto-detalle-info">
+                                <h3>Creatina Monohidratada</h3>
+                                <p class="producto-marca">Marca: Optimum Nutrition</p>
+                                <div class="producto-detalles-precio">
+                                    <span>$899.00</span>
+                                    <span>Cantidad: 1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="producto-detalle">
+                            <img src="img/bcaa.jpeg" alt="BCAA 4:1:1">
+                            <div class="producto-detalle-info">
+                                <h3>BCAA 4:1:1</h3>
+                                <p class="producto-marca">Marca: XTR Labs</p>
+                                <div class="producto-detalles-precio">
+                                    <span>$649.00</span>
+                                    <span>Cantidad: 1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="direccion-entrega">
+                    <h2>Dirección de Entrega</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Américas #123, Col. Ladrón de Guevara</p>
+                    <p>Guadalajara, Jalisco, CP 44600</p>
+                    <p>México</p>
+                </div>
+                
+                <div class="acciones-pedido">
+                    <button class="btn-consultar">Contactar con soporte</button>
+                    <button class="btn-secundario">Cancelar pedido</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-contacto">
+                <h3>Contáctanos</h3>
+                <p><i class="fas fa-map-marker-alt"></i>Av. Patria #477, Col. 5 de mayo, Guadalajara, Jalisco.</p>
+                <p><i class="fas fa-phone"></i>(55) 3329842406</p>
+                <p><i class="fas fa-map-marker-alt"></i>Av. Cruz del Sur #3275-B, Col. la Cruz, Guadalajara, Jalisco.</p>
+                <p><i class="fas fa-phone"></i>(55) 3329644547</p>
+            </div>
+            <div class="footer-redes">
+                <h3>Síguenos</h3>
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/theroyalsupplements" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/the_royal_supplements/#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-derechos">
+            <p>&copy; 2025 Royal Supplements. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

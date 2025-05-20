@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suplementos Deportivos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Logo de la tienda">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+        <div class="buscador">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar productos...">
+                    <button type="submit" id="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+        </div>
+        <div class="user-actions">
+            <a href="cuenta.html" class="cuenta-btn">
+                <i class="fas fa-user"></i>
+                <span>Mi Cuenta</span>
+            </a>
+            <a href="carrito.html" class="carrito-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Carrito</span>
+                <span class="carrito-contador">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="filtros">
+            <h2>Filtrar productos</h2>
+            <div class="filtro-grupo">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#">Proteínas</a></li>
+                    <li><a href="#">Creatina</a></li>
+                    <li><a href="#">Pre-entreno</a></li>
+                    <li><a href="#">Aminoácidos</a></li>
+                    <li><a href="#">Vitaminas</a></li>
+                </ul>
+            </div>
+            <div class="filtro-grupo">
+                <h3>Precio</h3>
+                <div class="rango-precio">
+                    <input type="range" min="0" max="100" value="50">
+                    <div class="rango-valores">
+                        <span>$0</span>
+                        <span>$10,000</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="productos">
+            <h1>Productos destacados</h1>
+            
+            <div class="productos-grid">
+                <!-- Producto 1 -->
+                <a href="producto1.html">
+                    <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/prote1.jpeg" alt="Proteína Whey">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Proteína Iso Phorm</h3>
+                        <p class="producto-precio">$1799.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Producto 2 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/prote2.jpeg" alt="Creatina">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Proteina Wey Blend</h3>
+                        <p class="producto-precio">$1499.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/prote3.jpeg" alt="Pre-Entreno">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Proteina Iso100</h3>
+                        <p class="producto-precio">$1949.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/prote4.jpeg" alt="BCAA">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Proteina Gold Standard 100% Whey</h3>
+                        <p class="producto-precio">$1599.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/creatina1.jpeg" alt="Glutamina">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Creatina 100% Alemana</h3>
+                        <p class="producto-precio">$799.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/creatina2.jpeg" alt="Proteína Vegana">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Creatina Esencial</h3>
+                        <p class="producto-precio">$499.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 7 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/creatina3.jpeg" alt="Omega 3">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Creatina Micronizada</h3>
+                        <p class="producto-precio">$549.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 8 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/creatina4.jpeg" alt="Multivitamínico">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Creatina Monohidratada</h3>
+                        <p class="producto-precio">$485.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 9 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/pre1.jpeg" alt="ZMA">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Pre-Entreno Legend</h3>
+                        <p class="producto-precio">$749.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 10 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/pre2.jpeg" alt="Quemador">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Pre-Entreno Loaded</h3>
+                        <p class="producto-precio">$799.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 11 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/pre3.jpeg" alt="Colágeno">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Pre-Entreno C4 Original</h3>
+                        <p class="producto-precio">$449.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 12 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/pre4.jpeg" alt="Magnesio">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Pre-Entreno Psychotic Gold</h3>
+                        <p class="producto-precio">$499.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 13 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/amino1.jpeg" alt="Ganador de Masa">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Amino Decanate</h3>
+                        <p class="producto-precio">$599.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 14 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/amino2.jpeg" alt="Barritas">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Aminos Flexx EAAS</h3>
+                        <p class="producto-precio">$499.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 15 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/amino3.jpeg" alt="Beta-Alanina">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Amino BCAA 6000 Recovery</h3>
+                        <p class="producto-precio">$399.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 16 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/amino4.jpeg" alt="Caseína">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Aminoacidos Moderns EAA</h3>
+                        <p class="producto-precio">$549.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 17 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/multi1.jpeg" alt="Electrolitos">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Vitaminas Animal Pack</h3>
+                        <p class="producto-precio">$899.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 18 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/multi2.jpeg" alt="Vitamina D">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Vitamina Multi-Men</h3>
+                        <p class="producto-precio">$449.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 19 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/multi3.jpeg" alt="L-Carnitina">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Vitamina Vitamin C</h3>
+                        <p class="producto-precio">$199.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 20 -->
+                <div class="producto-card">
+                    <div class="producto-imagen">
+                        <img src="img/multi4.jpeg" alt="Spirulina">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Vitamina Opti_Women</h3>
+                        <p class="producto-precio">$499.00</p>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-contacto">
+                <h3>Contáctanos</h3>
+                <p><i class="fas fa-map-marker-alt"></i>Av. Patria #477, Col. 5 de mayo, Guadalajara, Jalisco.</p>
+                <p><i class="fas fa-phone"></i>(55) 3329842406</p>
+                <p><i class="fas fa-map-marker-alt"></i>Av. Cruz del Sur #3275-B, Col. la Cruz, Guadalajara, Jalisco.</p>
+                <p><i class="fas fa-phone"></i>(55) 3329644547</p>
+            </div>
+            <div class="footer-redes">
+                <h3>Síguenos</h3>
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/theroyalsupplements" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/the_royal_supplements/#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-derechos">
+            <p>&copy; 2025 Royal Supplements. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script simple para contador de carrito
+        const botonesAgregar = document.querySelectorAll('.btn-agregar');
+        const contadorCarrito = document.querySelector('.carrito-contador');
+        
+        let contador = 0;
+        
+        botonesAgregar.forEach(boton => {
+            boton.addEventListener('click', () => {
+                contador++;
+                contadorCarrito.textContent = contador;
+                boton.innerHTML = "¡Agregado!";
+                setTimeout(() => {
+                    boton.innerHTML = "Agregar al carrito";
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
