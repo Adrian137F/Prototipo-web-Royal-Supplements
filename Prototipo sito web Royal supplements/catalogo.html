@@ -42,6 +42,9 @@
                 <span class="carrito-contador">0</span>
             </a>
         </div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
     </header>
 
     <main>
@@ -357,6 +360,25 @@
                 }, 1000);
             });
         });
+        // Menú hamburguesa
+    
+        document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector("header");
+        let menuToggle = document.querySelector(".menu-toggle");
+
+        if (!menuToggle) {
+        menuToggle = document.createElement("button");
+        menuToggle.className = "menu-toggle";
+        menuToggle.setAttribute("aria-label", "Abrir menú");
+        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        header.appendChild(menuToggle);
+        }
+        menuToggle.addEventListener("click", () => {
+        header.classList.toggle("menu-open");
+        });
+        });
     </script>
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -6,7 +6,8 @@
     <title>Seguimiento de Pedido - Royal Supplements</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="seguimiento.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -43,6 +44,9 @@
                 <span class="carrito-contador">3</span>
             </a>
         </div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
     </header>
 
     <h1 class="seguimiento-titulo">Seguimiento de Pedido</h1>
@@ -118,9 +122,9 @@
                                 <p>16 Mayo, 13:45</p>
                             </div>
                         </div>
-                        <div class="paso actual">
+                        <div class="paso activo">
                             <div class="paso-icono">
-                                <i class="fas fa-truck"></i>
+                                <i class="fas fa-truck-fast"></i>
                             </div>
                             <div class="paso-info">
                                 <h3>En reparto</h3>
@@ -214,5 +218,23 @@
             <p>&copy; 2025 Royal Supplements. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <!-- Menú hamburguesa-->>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector("header");
+    let menuToggle = document.querySelector(".menu-toggle");
+
+    if (!menuToggle) {
+    menuToggle = document.createElement("button");
+    menuToggle.className = "menu-toggle";
+    menuToggle.setAttribute("aria-label", "Abrir menú");
+    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    header.appendChild(menuToggle);
+    }
+    menuToggle.addEventListener("click", () => {
+    header.classList.toggle("menu-open");
+    });
+    });
+    </script>
 </body>
 </html>
